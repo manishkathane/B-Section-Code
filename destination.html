@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Explore Amazing Destinations | Travel Website</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+  }
+  header {
+    background: #004e92;  /* deep blue */
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('back.jpg');
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+  }
+  header p {
+    margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  main {
+    max-width: 1200px;
+    margin: 3rem auto 4rem;
+    padding: 0 1rem;
+  }
+  .destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+  .destination {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  .destination:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+  .destination img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .destination-content {
+    padding: 1.5rem 1.5rem 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .destination h3 {
+    margin: 0 0 0.7rem 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: black;
+  }
+  .destination p {
+    flex-grow: 1;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  .btn {
+    align-self: flex-start;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #004e92;
+  }
+
+  footer {
+    background-color: #004e92;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-weight: 300;
+  }
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .destination img {
+      height: 140px;
+    }
+  }
+</style>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-globe"></i><b>IncredibleWorld</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link active" href="file:///D:/web/Postlab/Travel.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header>
+  <h1>Explore Amazing Destinations</h1>
+  <p>Your gateway to unforgettable travel experiences</p>
+</header>
+<main>
+     <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+             <li class="breadcrumb-item active" aria-current="page">Destination</li>
+        </ol>
+    </nav>
+</div>
+  <section class="destinations" aria-label="Popular Travel Destinations">
+    <article class="destination">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Beautiful tropical beach with palm trees" />
+      <div class="destination-content">
+        <h3>Bali, Indonesia</h3>
+        <p>Experience the tropical paradise of Bali, with its pristine beaches, vibrant culture, and lush rice terraces.</p>
+        <a href="#" class="btn" aria-label="Learn more about Bali, Indonesia">Discover More</a>
+      </div>
+    </article>
+    <article class="destination">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Eiffel Tower in Paris at sunset" />
+      <div class="destination-content">
+        <h3>Paris, France</h3>
+        <p>Visit the city of lights and love, stroll through charming streets and enjoy world-class art, cuisine, and landmarks.</p>
+        <a href="#" class="btn" aria-label="Learn more about Paris, France">Discover More</a>
+      </div>
+    </article>
+    <article class="destination">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Santorini white buildings with blue domes overlooking the sea" />
+      <div class="destination-content">
+        <h3>Santorini, Greece</h3>
+        <p>Enjoy breathtaking sunsets, whitewashed buildings, and the crystal-clear Aegean Sea on this stunning island.</p>
+        <a href="#" class="btn" aria-label="Learn more about Santorini, Greece">Discover More</a>
+      </div>
+    </article>
+    <article class="destination">
+      <img src="NY.png" alt="New York City skyline at night with illuminated skyscrapers" />
+      <div class="destination-content">
+        <h3>New York City, USA</h3>
+        <p>The city that never sleeps offers iconic landmarks, vibrant neighborhoods, and endless entertainment.</p>
+        <a href="#" class="btn" aria-label="Learn more about New York City, USA">Discover More</a>
+      </div>
+    </article>
+    <article class="destination">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" alt="Lush green mountains and lakes in Switzerland" />
+      <div class="destination-content">
+        <h3>Swiss Alps, Switzerland</h3>
+        <p>Discover stunning alpine scenery, charming villages, and outdoor adventures in the heart of Europe.</p>
+        <a href="#" class="btn" aria-label="Learn more about Swiss Alps, Switzerland">Discover More</a>
+      </div>
+    </article>
+    <article class="destination">
+      <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80" alt="Tokyo city skyline with Mount Fuji in the background" />
+      <div class="destination-content">
+        <h3>Tokyo, Japan</h3>
+        <p>Explore the dazzling metropolis blending ultra-modern living with rich tradition and cuisine.</p>
+        <a href="#" class="btn" aria-label="Learn more about Tokyo, Japan">Discover More</a>
+      </div>
+    </article>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Explore Amazing Destinations. All rights reserved.
+</footer>
+</body>
+</html>
